@@ -1,3 +1,5 @@
+package cpsc2150.listDec;
+
 import java.util.List;
 import java.util.Random;
 
@@ -10,7 +12,7 @@ import java.util.Random;
  *
  * @Initialization_ensures the shuffle list is not empty
  */
-public interface IShuffleList extends List {
+public interface IShuffleList<T> extends List<T> {
 
     /**
      * Randomly picks two positions in the list and swaps them. It repeats this task the designated amount of times.
@@ -40,6 +42,11 @@ public interface IShuffleList extends List {
      * @post self = [self with the items at position i and j swapped]
      */
     default void swap(int i, int j) {
+        T itemi = get(i);
+        T itemj = get(j);
+
+        set(i, itemj);
+        set(j, itemi);
     }
 
 }
