@@ -17,6 +17,7 @@ public interface IShuffleList extends List {
         Random rand = new Random();
         int rand_num = rand.nextInt(myList.size());
     }
+    //this is a test
 
     /**
      * Switches positions of items at the two given indexes
