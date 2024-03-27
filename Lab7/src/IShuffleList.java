@@ -15,7 +15,11 @@ public interface IShuffleList extends List {
      */
     default void shuffle(int swaps) {
         Random rand = new Random();
-        int rand_num = rand.nextInt(myList.size());
+        for (int i = 0; i < swaps; i++) {
+            int first_num = rand.nextInt(size());
+            int second_num = rand.nextInt(size());
+            swap(first_num,second_num);
+        }
     }
 
     /**
