@@ -19,9 +19,10 @@ public interface IShuffleList extends List {
     }
 
     /**
+     * Switches positions of items at the two given indexes
      *
-     * @param i
-     * @param j
+     * @param i the position of the first item that will be swapped
+     * @param j the position of the second item that will be swapped
      */
     default void swap(int i, int j) {
     }
