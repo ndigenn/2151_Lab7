@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Random;
 
 /**
  * DESCRIPTION
@@ -13,7 +14,8 @@ public interface IShuffleList extends List {
      * 
      */
     default void shuffle(int swaps) {
-
+        Random rand = new Random();
+        int rand_num = rand.nextInt(myList.size());
     }
 
     /**
