@@ -27,9 +27,9 @@ public class ShuffleList<T> implements IShuffleList<T> {
      *
      * @param l
      *            An existing implementation of {@link List}.
-     * 
+     *
      * @pre l != null
-     * 
+     *
      * @post myList = l
      */
     public ShuffleList(List<T> l) {
@@ -42,11 +42,13 @@ public class ShuffleList<T> implements IShuffleList<T> {
 
     @Override
     public boolean add(T e) {
+        return myList.add(e);
         // complete this method
     }
 
     @Override
     public T get(int i) {
+        return myList.get(i);
         // complete this method
     }
 
