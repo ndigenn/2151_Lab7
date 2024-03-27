@@ -71,7 +71,7 @@ public class ShuffleList<T> implements IShuffleList<T> {
     @Override
     public void clear() {
         // complete this method
-        return myList.clear();
+        myList.clear();
     }
     /**
      * Replaces the element at the specified position in this list with the specified element
