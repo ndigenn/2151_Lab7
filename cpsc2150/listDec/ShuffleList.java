@@ -69,22 +69,12 @@ public class ShuffleList<T> implements IShuffleList<T> {
         return myList.size();
     }
 
-    /**
-     * Removes all of the elements from this list (optional operation).
-     * The list will be empty after this call returns.
-     */
     @Override
     public void clear() {
         // complete this method
         myList.clear();
     }
-    /**
-     * Replaces the element at the specified position in this list with the specified element
-     *
-     * @param i index of the element to replace
-     * @param x element to be stored at the specified position
-     * @return the element previously at the specified position
-     */
+
     @Override
     public T set(int i, T x) {
         // complete this method
