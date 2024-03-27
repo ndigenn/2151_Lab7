@@ -2,7 +2,13 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * DESCRIPTION
+ * Interface contract for ShuffleList-1-1.java that defines 2 default methods.
+ *
+ * @defines self: the shuffle list
+ *
+ * @constraints self != null
+ *
+ * @Initialization_ensures the shuffle list is not empty
  */
 public interface IShuffleList extends List {
 
@@ -11,6 +17,7 @@ public interface IShuffleList extends List {
      *
      * @param swaps the desired amount of times that two random positions will be swapped.
      *
+     * @pre swaps >= 0
      * @post self = [self with items randomized to a varying degree]
      */
     default void shuffle(int swaps) {
