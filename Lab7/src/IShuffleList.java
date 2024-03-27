@@ -22,15 +22,22 @@ public interface IShuffleList extends List {
      */
     default void shuffle(int swaps) {
         Random rand = new Random();
-        int rand_num = rand.nextInt(myList.size());
+        for (int i = 0; i < swaps; i++) {
+            int first_num = rand.nextInt(size());
+            int second_num = rand.nextInt(size());
+            swap(first_num,second_num);
+        }
     }
-    //this is a test
 
     /**
      * Switches positions of items at the two given indexes
      *
      * @param i the position of the first item that will be swapped
      * @param j the position of the second item that will be swapped
+     *
+     * @pre 0 <= i < [size of self] AND 0 <= j < [size of self]
+     *
+     * @post self = [self with the items at position i and j swapped]
      */
     default void swap(int i, int j) {
     }
