@@ -55,11 +55,13 @@ public class ShuffleList<T> implements IShuffleList<T> {
     @Override
     public void add(int index, T e) {
         // complete this method
+        myList.add(index, e);
     }
 
     @Override
     public int size() {
         // complete this method
+        return myList.size();
     }
 
     /**

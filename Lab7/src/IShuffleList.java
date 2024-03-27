@@ -6,7 +6,11 @@ import java.util.List;
 public interface IShuffleList extends List {
 
     /**
-     * @param swaps
+     * Randomly picks two positions in the list and swaps them the designated amount of times.
+     *
+     * @param swaps the desired amount of times that two random positions will be swapped.
+     *
+     * 
      */
     default void shuffle(int swaps) {
 
