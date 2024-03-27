@@ -1,5 +1,8 @@
 import java.util.List;
 
+/**
+ * DESCRIPTION
+ */
 public interface IShuffleList extends List {
 
     /**
